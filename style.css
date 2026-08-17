@@ -10,7 +10,7 @@
  line-height: 1.6;
  }
 
- .navbar{
+  .navbar{
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -44,6 +44,14 @@
  font-size: 18px;
  transition: 0.3s ease;
  font-weight: bold;
+ }
+
+ #menu{
+ display: none;
+ }
+
+ .menu-icon{
+    display: none;
  }
 
  .home{
@@ -444,14 +452,42 @@
 
   @media (max-width: 992px){
  .navbar{
- padding: 15px 20px;
- flex-direction: column;
+ height: 80px;
+ padding: 0px 30px;
+ }
+
+ .logo{
+ font-size: 30px;
+ }
+
+ .menu-icon{
+ display: block;
+ font-size: 30px;
+ color: #172554;
+ cursor: pointer;
+ z-index: 3000;
  }
 
  .navbar ul{
- flex-direction: column;
- align-items: center;
- gap: 15px;
+ position:fixed;
+ top: 90px;
+ right: -70%;
+ width: 70%;
+ height: calc(100vh -90px);
+ display: block;
+ padding: 55px 45px;
+ background: linear-gradient(180deg #063b91 #001b4d);
+ transition: right 0.3s ease;
+ } 
+
+ .navbar ul li{
+ margin-bottom: 42px;
+ }
+
+ .navbar ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
  }
 
  .logo{
