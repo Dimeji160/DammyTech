@@ -79,18 +79,32 @@
  color: #1e6cff;
  }
 
- .buttons button{
- background: #1e6cff;
+ .btn {
+ display: inline-block;
+ padding: 10px 24px;
+ font-size: 16px;
+ font-family: sans-serif;
+ text-decoration: none;
+ border-radius: 10px;
+ transition: box-shadow 0.3s ease;
+}
+
+ .contact-btn {
+ background-color: #007bff;
  color: white;
- border: none;
- padding: 10px 20px;
- font-size: 15px;
- border-radius: 8px;
- margin-right: 1px;
- cursor: pointer;
+ margin-right: 10px;
  }
 
- .buttons button:hover{
+ .contact-btn:hover {
+ box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+ }
+ 
+ .cv-btn {
+ background-color: #1e6cff;
+ color: white;
+ }
+
+ .cv-btn:hover {
  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
  }
 
@@ -395,21 +409,25 @@
  background: white;
  }
 
- .div5 button{
- display: block;
- width: 155px;
- height: 50px;
- margin-left: auto;
- background: #2563eb;
- color: white;
+ .submit-btn {
+ display: inline-block;
+ padding: 12px 30px; 
+ margin-left: 380px;
+ font-family: Arial, sans-serif;
+ font-size: 16px;
+ font-weight: bold;
+ text-decoration: none;
+ text-align: center;
+ background-color: #2563eb;  
+ color: #ffffff;
  border: none;
- border-radius: 8px;
- font-size: 17px;
- font-weight: 700;
+ border-radius: 4px;
  cursor: pointer;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ transition: all 0.2s ease-in-out;
  }
 
- .div5 button:hover{
+ .submit-btn:hover {
  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
  }
 
@@ -507,6 +525,11 @@
  flex-direction: column;
  text-align: center;
  gap: 40px;
+ }
+
+ .div2 img{
+ width: 100%;
+ max-width: 400px;
  }
 
  .div4{

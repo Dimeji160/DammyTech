@@ -14,7 +14,7 @@
 
  <body>
  <nav class="navbar">
- <div class="logo">DammyTech</div>
+ <a href="#home"></a><div class="logo">DammyTech</div>
  <input type="checkbox" id="menu">
  <label for="menu" class="menu-icon">&#9776;</label>
  <ul>
@@ -34,10 +34,10 @@
  Web Designer
  </h1>
 
- <div class="buttons">
- <button type="button">Contact</button>
- <button type="button">CV</button>
- </div>
+ <div class="button-container">
+    <a href="mailto:your.email@example.com" class="btn contact-btn">Contact</a>
+    <a href="my-cv.pdf" target="_blank" class="btn cv-btn">CV</a>
+</div>
 
  <div class="social-media-icons">
  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -184,7 +184,7 @@
  <textarea name="message"placeholder="Type your message..."rows="5"required></textarea>
  <br>
 
- <button type="submit">Submit</button>
+ <a href="success-page.html" class="submit-btn">Submit</a>
 
  </form>
  </section>
