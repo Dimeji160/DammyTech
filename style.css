@@ -28,6 +28,12 @@
  display: inline-block;
  }
 
+ .nav-menu{
+ display: flex;
+ list-style: none;
+ gap: 30px;  
+ }
+
  .navbar ul{
  display: flex;
  list-style: none;
@@ -45,6 +51,11 @@
 
  #menu{
  display: none;
+ }
+
+ .menu-icon{
+ display: none;
+ cursor: pointer;
  }
 
  .home{
@@ -422,10 +433,10 @@
 
  .footer{
  width: 100%;
- background: #041733;
+ background: #051225;
  color: white;
  text-align: center;
- padding: 55px 20px 30px;
+ padding: 55px 20px 50px;
  box-sizing: border-box;
  }
 
@@ -461,6 +472,7 @@
  .navbar{
  height: 60px;
  padding: 0px 30px;
+ position: relative;
  z-index: 1000;
  position: sticky;
  top: 0;
